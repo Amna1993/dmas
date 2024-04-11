@@ -4,7 +4,7 @@ function printOutput(output) {
 }
 
 function validateInput(num) {
-    if (isNaN(num)) {
+    if (num === "" || num === null || isNaN(num)) {
         alert("Enter a valid number");
         return false;
     }
