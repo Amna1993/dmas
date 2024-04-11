@@ -3,21 +3,11 @@ function printOutput(output) {
   
 }
 
-function validateInput(num) {
-    if (num === "" || num === null || isNaN(num)) {
-        alert("Enter a valid number");
-        return false;
-    }
-    return true;
-}
+
 
 function sum() {
     var num1 = parseFloat(document.getElementById("input1").value) || 0;
     var num2 = parseFloat(document.getElementById("input2").value) || 0;
-
-    if (!validateInput(num1) || !validateInput(num2)) {
-        return;
-    }
 
     var result = num1 + num2;
     printOutput(result);
@@ -27,10 +17,6 @@ function subtract() {
     var num1 = parseFloat(document.getElementById("input1").value) || 0;
     var num2 = parseFloat(document.getElementById("input2").value) || 0;
 
-    if (!validateInput(num1) || !validateInput(num2)) {
-        return;
-    }
-
     var result = num1 - num2;
     printOutput(result);
 }
@@ -38,10 +24,6 @@ function subtract() {
 function multiply() {
     var num1 = parseFloat(document.getElementById("input1").value) || 0;
     var num2 = parseFloat(document.getElementById("input2").value) || 0;
-
-    if (!validateInput(num1) || !validateInput(num2)) {
-        return;
-    }
 
     var result = num1 * num2;
     printOutput(result);
@@ -51,10 +33,7 @@ function division() {
     var num1 = parseFloat(document.getElementById("input1").value) || 0;
     var num2 = parseFloat(document.getElementById("input2").value) || 0;
 
-    if (!validateInput(num1) || !validateInput(num2)) {
-        return;
-    }
-
+   
     if (num2 === 0) {
         alert("Cannot divide by zero");
         return;
