@@ -34,7 +34,7 @@ function division() {
     var num2 = parseFloat(document.getElementById("input2").value) || 0;
 
    
-    if (num2 == 0) {
+    if (num2 === 0) {
         alert("Cannot divide by zero");
         return;
     }
